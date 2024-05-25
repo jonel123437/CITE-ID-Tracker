@@ -3,7 +3,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>idTracker | Register</title>
-        <link rel="stylesheet" href="./assets/css/home.css">
+        <link rel="stylesheet" href="../assets/css/home.css">
+        <link rel="stylesheet" href="../assets/css/styles.css">
     </head>
     <body>
         <?php
@@ -26,10 +27,10 @@
                     <input type="password" placeholder="Password" name="password">
                 </div>
                 <div class="input_container">
-                    <input type="submit" value="Signup" style="background-color: aquamarine !important; width: 100%; cursor: pointer;">
+                    <input class="signup" type="submit" style="background-color: aquamarine !important; width: 100%; cursor: pointer;">
                 </div>
             </form>
         </div>
     </body>
-    <script src="./assets/js/home.js"></script>
+    <script src="../assets/js/home.js"></script>
 </html>

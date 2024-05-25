@@ -20,9 +20,7 @@
         $sql = "INSERT INTO users(full_name, id_no, email, password) VALUES ('$full_name', '$id_no', '$email', '$password')";
 
         if($conn->query($sql) === TRUE) {
-            echo "<div>Success</div>";
         } else {
-            echo "<div>Error: " . $conn->error . "</div>";
         }
     }
 ?>

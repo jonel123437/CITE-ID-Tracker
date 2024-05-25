@@ -11,7 +11,7 @@ document.getElementById('loginPage').addEventListener('click', function() {
             greetings.style.display = "none";
         }
     };
-    xhttp.open("GET", "./View/login.html", true);
+    xhttp.open("GET", "./View/login.php", true);
     xhttp.send();
 })
 
