@@ -1,0 +1,18 @@
+.ul_container {
+    display: flex;
+}
+
+.header_container {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.322);
+}
+
+.header_container1 {
+    position: absolute;
+    right: 20px;
+}
