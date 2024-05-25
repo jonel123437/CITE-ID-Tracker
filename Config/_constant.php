@@ -1,4 +1,3 @@
-<pre>
 <?php
     define("DS", "/");
     define("HTTP", $_SERVER["REQUEST_SCHEME"]);

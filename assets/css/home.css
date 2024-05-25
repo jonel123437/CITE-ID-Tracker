@@ -12,7 +12,29 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.322);
 }
 
+footer {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
 .header_container1 {
     position: absolute;
-    right: 20px;
+    right: 30px;
+}
+
+.container {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.322);
+    border-radius: 1rem;
+    padding: 10px;
+}
+
+form {
+    padding: 10px;
+    text-align: center;
+}
+
+.input_container {
+    margin-bottom: 10px;
 }
