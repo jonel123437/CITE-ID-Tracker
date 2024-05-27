@@ -8,7 +8,7 @@
     </head>
     <body>
         <?php
-            require "Model/database.php";
+            require "Model/login.php";
         ?>
         <header>
             <div class="header_container">
@@ -22,7 +22,7 @@
             </div>
         </header>
         <div class="container">
-            <form action="" method="post">
+            <form action="?page=login" method="post">
                 <h1 style="margin-bottom: 2rem;">LOGIN</h1>
                 <div class="input_container">
                     <input type="email" placeholder="Email" name="email">
@@ -31,7 +31,7 @@
                     <input type="password" placeholder="Password" name="password">
                 </div>
                 <div class="input_container">
-                    <input type="submit" value="Login" style="background-color: aquamarine !important; width: 100%; cursor: pointer;">
+                    <input type="submit" value="Login" style="background-color: 1177d1 !important; width: 100%; cursor: pointer;">
                 </div>
             </form>
         </div>

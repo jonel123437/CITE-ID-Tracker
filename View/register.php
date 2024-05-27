@@ -8,7 +8,7 @@
     </head>
     <body>
         <?php
-            require "Model/database.php";
+            require "Model/register.php";
         ?>
         <header>
             <div class="header_container">
@@ -37,7 +37,7 @@
                     <input type="password" placeholder="Password" name="password">
                 </div>
                 <div class="input_container">
-                    <input class="signup" type="submit" style="background-color: aquamarine !important; width: 100%; cursor: pointer;">
+                    <input class="signup" type="submit" style="background-color: 1177d1 !important; width: 100%; cursor: pointer;">
                 </div>
             </form>
         </div>
