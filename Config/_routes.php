@@ -15,10 +15,16 @@
             case 'login':
                             $pagesController->login();
                             break;
-            case 'dashboard':   $pagesController->dashboard();
+            case 'dashboard':   
+                                $pagesController->dashboard();
                                 break;
-                                
-            default:
+            
+            case 'profile': 
+                                $pagesController->profile();
+                                break;
+
+            default:    
+                        $pagesController->error();
                         break;
         }
     } else {

@@ -12,5 +12,11 @@
         function dashboard() {
             include "View/dashboard.php";
         }
+        function error() {
+            include "View/404.php";
+        }
+        function profile() {
+            include "View/profile.php";
+        }
     }
 ?>  

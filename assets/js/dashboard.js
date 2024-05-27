@@ -21,3 +21,7 @@ function confirmLogout() {
         window.location.href = "?page=home"; 
     }
 }
+
+document.getElementById('dashboard_title').addEventListener('click', function() {
+    window.location.href = "?page=dashboard";
+})

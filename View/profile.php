@@ -2,7 +2,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>idTracker | Dashboard</title>
+        <title>idTracker | Home</title>
+        <link rel="stylesheet" href="./assets/css/profile.css">
         <link rel="stylesheet" href="./assets/css/styles.css">
         <link rel="stylesheet" href="./assets/css/home.css">
         <link rel="stylesheet" href="./assets/css/dashboard.css">
@@ -16,6 +17,12 @@
                 $fullName = $_SESSION['full_name'];
             } else {
                 $fullName = "Guest"; // Default value if full name is not set
+            }
+
+            if(isset($_SESSION['id_no'])) {
+                $id_no = $_SESSION['id_no'];
+            } else {
+                $id_no = "N/A"; // Default value if ID number is not set
             }
         ?>
         <header>
@@ -33,8 +40,29 @@
             <br>
             <a href="#" onclick="confirmLogout()">Logout</a>
         </div>
-        <div id="greetings" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">
-            <h1>WELCOME TO DASHBOARD</h1>
+        
+        <div id="profile_id">
+            <div class="profile_1">
+                <div class="profile_2">
+                    <img class="citelogo" src="assets/img/citelogo.png" alt="">
+                    <h1>CITE <br>TECHNICAL <br>INSTITUTE, INC.</h1>
+                </div>
+                <div class="profile_3">
+                    <p>Purok 2, San Jose, Cebu City, Philippines</p>
+                    <p>Tel. No. 346-1611 Fax No. 236-2650</p>
+                </div>
+            </div>
+
+            <div class="profile_4">
+                <img class="dummylogo" src="assets/img/dummy.jpg" alt="">
+                <h1><?= $fullName?></h1>
+                <h4>NAME</h4>
+            </div>
+
+            <div class="profile_5">
+                <h2><?= $id_no ?></h2>
+                <h4>ID NO.</h4>
+            </div>
         </div>
     </body>
     <script src="assets/js/dashboard.js"></script>
