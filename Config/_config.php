@@ -1,4 +1,3 @@
 <?php
-    // require "Config/_routes.php";
-    require "_constant.php";
+    require "_routes.php";
 ?>

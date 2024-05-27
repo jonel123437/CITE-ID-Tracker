@@ -8,16 +8,14 @@
     </head>
     <body>
         <?php
-            require "./Config/_config.php";
-            require "./Model/database.php";
         ?>
         <header>
             <div class="header_container">
                 <h1 id="title" style="cursor: pointer; margin-left: 1rem;">ID Tracker</h1>
                 <div class="header_container1">
                     <ul class="ul_container">
-                        <li style="margin: 0 20px;" id="signupPage"><a href="">Signup</a></li>
-                        <li><a href="" id="loginPage">Login</a></li>
+                        <li style="margin: 0 50px;"><a href="?page=register">Signup</a></li>
+                        <li><a href="?page=login">Login</a></li>
                     </ul>
                 </div>
             </div>
@@ -25,10 +23,8 @@
         <div id="greetings" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">
             <h1>WELCOME TO CITE ID TRACKER</h1>
         </div>
-        <div id="login" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">
-        </div>
         <footer>
-            <p>~ Created by "GROUP 3" ~</p>
+            <p>~ Created by GROUP 3 ~</p>
         </footer>
     </body>
     <script src="./assets/js/home.js"></script>
