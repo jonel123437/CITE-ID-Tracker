@@ -18,5 +18,8 @@
         function profile() {
             include "View/profile.php";
         }
+        function search() {
+            include "View/search_id.php";
+        }
     }
 ?>  

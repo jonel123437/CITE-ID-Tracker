@@ -9,28 +9,15 @@
         <link rel="stylesheet" href="./assets/css/dashboard.css">
     </head>
     <body>
-        <?php
-            session_start(); // Start the session to access session variables
-
-            // Check if the full name is set in the session
-            if(isset($_SESSION['full_name'])) {
-                $fullName = $_SESSION['full_name'];
-            } else {
-                $fullName = "Guest"; // Default value if full name is not set
-            }
-
-            if(isset($_SESSION['id_no'])) {
-                $id_no = $_SESSION['id_no'];
-            } else {
-                $id_no = "N/A"; // Default value if ID number is not set
-            }
+        <?php   
+            include "Model/login.php";
         ?>
         <header>
             <div class="header_container">
                 <h1 id="dashboard_title" style="cursor: pointer; margin-left: 1rem;">ID Tracker</h1>
                 <div class="header_container1">
                     <ul class="ul_container">
-                        <li><a href="" id="dropdown"><?= $fullName ?><a href="" id="dropdown1"> ▼</a></a></li>
+                        <li><a href="" id="dropdown"><?= $fullNameProfile ?><a href="" id="dropdown1"> ▼</a></a></li>
                     </ul>
                 </div>
             </div>
@@ -55,12 +42,12 @@
 
             <div class="profile_4">
                 <img class="dummylogo" src="assets/img/dummy.jpg" alt="">
-                <h1><?= $fullName?></h1>
+                <h1><?=$fullNameProfile?></h1>
                 <h4>NAME</h4>
             </div>
 
             <div class="profile_5">
-                <h2><?= $id_no ?></h2>
+                <h2><?= $id_noProfile ?></h2>
                 <h4>ID NO.</h4>
             </div>
         </div>

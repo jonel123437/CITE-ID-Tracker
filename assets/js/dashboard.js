@@ -25,3 +25,15 @@ function confirmLogout() {
 document.getElementById('dashboard_title').addEventListener('click', function() {
     window.location.href = "?page=dashboard";
 })
+
+
+document.getElementById('search_id').addEventListener('click', function() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("greetings").innerHTML = xhttp.responseText;
+        }
+    };
+    xhttp.open("GET", "?page=dashboard", true);
+    xhttp.send();
+})
