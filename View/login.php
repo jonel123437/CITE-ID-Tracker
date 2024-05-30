@@ -25,13 +25,13 @@
             <form action="?page=login" method="post">
                 <h1 style="margin-bottom: 2rem;">LOGIN</h1>
                 <div class="input_container">
-                    <input type="email" placeholder="Email" name="email">
+                    <input id="email" type="email" placeholder="Email" name="email">
                 </div>
                 <div class="input_container">
-                    <input type="password" placeholder="Password" name="password">
+                    <input id="password" type="password" placeholder="Password" name="password">
                 </div>
                 <div class="input_container">
-                    <input type="submit" value="Login" style="background-color: 1177d1 !important; width: 100%; cursor: pointer;">
+                    <input id="submit" type="submit" value="Login" style="background-color: 1177d1 !important; width: 100%; cursor: pointer;">
                 </div>
             </form>
         </div>

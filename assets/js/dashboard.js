@@ -25,18 +25,3 @@ function confirmLogout() {
 document.getElementById('dashboard_title').addEventListener('click', function() {
     window.location.href = "?page=dashboard";
 })
-
-// document.querySelector('.profile').addEventListener('click', function() {
-//     event.preventDefault();
-//     var xhttp = new XMLHttpRequest();
-//     xhttp.onreadystatechange = function() {
-//         if (this.readyState == 4 && this.status == 200) {
-//             greetings.style.display = "none";
-//             dropdown.style.display = "none"
-//             document.getElementById('dropdown1').innerHTML = " ▼"; 
-//             document.getElementById("profile_id").innerHTML = xhttp.responseText;
-//         }
-//     };
-//     xhttp.open("GET", "?page=profile", true);
-//     xhttp.send();
-// })
