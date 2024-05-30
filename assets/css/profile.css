@@ -55,3 +55,58 @@
 .profile_5 h4 {
     margin-top: 10px;
 }
+
+span {
+    display: none;
+    cursor: pointer;
+}
+
+.settings {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -15rem;
+    margin-left: 10rem;
+    cursor: pointer;
+}
+
+#edit {
+    font-size: 1rem !important;
+    padding: 0;
+    margin: 0;
+}
+
+form {
+    display: none;
+}
+
+form input {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+/* 
+button {
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 1rem;
+    border: none;
+    padding: 10px;
+    background-color: #dddddd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button:hover {
+    background-color: #1177d1;
+}
+
+#next_button {
+    margin-left: 17rem;
+}
+#prev_button {
+    margin-left: -17rem;
+    display: none;
+} */

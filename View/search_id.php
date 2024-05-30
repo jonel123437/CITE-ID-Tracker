@@ -24,7 +24,9 @@
             </div>
         </header>
         <div class="dropdown-logout">
-            <a href="?page=profile">Profile</a>
+            <a href="" class="profile">Profile</a>
+            <br>
+            <a href="?page=dashboard">Dashboard</a>
             <br>
             <a href="#" onclick="confirmLogout()">Logout</a>
         </div>

@@ -10,7 +10,7 @@
     </head>
     <body>
         <?php   
-            include "Model/login.php";
+            include "Model/profile.php";
         ?>
         <header>
             <div class="header_container">
@@ -24,6 +24,8 @@
         </header>
         <div class="dropdown-logout">
             <a href="?page=profile">Profile</a>
+            <br>
+            <a href="?page=dashboard">Dashboard</a>
             <br>
             <a href="#" onclick="confirmLogout()">Logout</a>
         </div>
@@ -41,16 +43,26 @@
             </div>
 
             <div class="profile_4">
-                <img class="dummylogo" src="assets/img/dummy.jpg" alt="">
-                <h1><?=$fullNameProfile?></h1>
+                <img class="dummylogo" src="<?php echo $imageSrc; ?>" alt="">
+                <span id="edit" class="edit_profile"> ⚙️</span>
+                <form class="upload_image" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="image">
+                    <input type="submit" value="submit">
+                </form>
+                <h1><?=$fullNameProfile?><span id="edit"> ⚙️</span></h1>
                 <h4>NAME</h4>
             </div>
 
+
             <div class="profile_5">
-                <h2><?= $id_noProfile ?></h2>
+                <h2><?=$id_noProfile?><span id="edit"> ⚙️</span></h2>
                 <h4>ID NO.</h4>
             </div>
+            <div class="settings">⚙️</div>
         </div>
+        <!-- <button id="next_button">></button> -->
+        <!-- <button id="prev_button"><</button>  -->
     </body>
     <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/profile.js"></script>
 </html>

@@ -16,8 +16,7 @@
             $_SESSION['searched_full_name'] = $fullNameSearch;
             $_SESSION["searched_id_no"] = $id_noSearch;
     
-            // Redirect to the search page
-            header("Location: ?page=search");
+            
         } else {
             // Handle case when user is not found
         }

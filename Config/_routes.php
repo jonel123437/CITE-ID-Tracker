@@ -25,6 +25,9 @@
             case 'search':
                                 $pagesController->search();
                                 break;
+            case 'back_profile':
+                                    $pagesController->back_profile();
+                                    break;
 
             default:    
                         $pagesController->error();
